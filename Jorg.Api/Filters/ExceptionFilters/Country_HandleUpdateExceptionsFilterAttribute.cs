@@ -4,14 +4,9 @@ using Microsoft.AspNetCore.Mvc.Filters;
 
 namespace Jorg.Api.Filters.ExceptionFilters
 {
-	public class Country_HandleUpdateExceptionsFilterAttribute : ExceptionFilterAttribute
+	public class Country_HandleUpdateExceptionsFilterAttribute(JorgDbContext db) : ExceptionFilterAttribute
 	{
-		private readonly ApplicationDbContext _db;
-
-		public Country_HandleUpdateExceptionsFilterAttribute(ApplicationDbContext db)
-		{
-			_db = db;
-		}
+		private readonly JorgDbContext _db = db;
 
 		public override void OnException(ExceptionContext context)
 		{

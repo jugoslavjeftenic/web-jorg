@@ -5,13 +5,13 @@ using Jorg.Api.Filters.ResourceFilters;
 using Jorg.Api.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Jorg.Api
+namespace Jorg.Api.Controllers
 {
 	[ApiController]
 	[Route("api/v1/[controller]")]
-	public class CountriesController(ApplicationDbContext db) : ControllerBase
+	public class CountriesController(JorgDbContext db) : ControllerBase
 	{
-		private readonly ApplicationDbContext _db = db;
+		private readonly JorgDbContext _db = db;
 
 		// Create
 		[HttpPost]

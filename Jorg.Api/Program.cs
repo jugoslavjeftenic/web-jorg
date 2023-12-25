@@ -5,13 +5,16 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-{
-	options.UseSqlServer(builder.Configuration.GetConnectionString("JorgDB"));
-});
+//builder.Services.AddDbContext<ApplicationDbContext>(options =>
+//{
+//	options.UseSqlServer(builder.Configuration.GetConnectionString("JorgDB"));
+//});
 
 // Add services to the container.
 builder.Services.AddControllers();
+
+var sqlConnection = builder.Configuration["ConnectionStrings:Jorg:SqlDb"];
+builder.Services.AddSqlServer<JorgDbContext>(sqlConnection, options => options.EnableRetryOnFailure());
 
 var app = builder.Build();
 
@@ -20,5 +23,7 @@ var app = builder.Build();
 app.UseHttpsRedirection();
 
 app.MapControllers();
+
+app.CreateDbIfNotExists();
 
 app.Run();
