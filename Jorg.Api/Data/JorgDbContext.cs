@@ -1,7 +1,7 @@
-﻿using Jorg.Api.Models;
+﻿using Jorg.Web.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace Jorg.Api.Data
+namespace Jorg.Web.Data
 {
 	public class JorgDbContext(DbContextOptions<JorgDbContext> options) : DbContext(options)
 	{

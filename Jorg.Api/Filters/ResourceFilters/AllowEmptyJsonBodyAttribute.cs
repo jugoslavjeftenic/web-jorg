@@ -2,7 +2,7 @@
 using System.Text;
 
 // Source: https://blog.dhampir.no/content/allowing-an-empty-json-body-or-no-content-type-in-a-c-asp-net-core-api
-namespace Jorg.Api.Filters.ResourceFilters
+namespace Jorg.Web.Filters.ResourceFilters
 {
 	[AttributeUsage(AttributeTargets.Method)]
 	public class AllowEmptyJsonBodyAttribute : Attribute, IResourceFilter

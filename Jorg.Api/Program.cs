@@ -1,6 +1,6 @@
 
 
-using Jorg.Api.Data;
+using Jorg.Web.Data;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

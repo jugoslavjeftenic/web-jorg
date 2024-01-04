@@ -1,4 +1,4 @@
-﻿namespace Jorg.Api.Data
+﻿namespace Jorg.Web.Data
 {
 	public static class Extensions
 	{

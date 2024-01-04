@@ -1,8 +1,8 @@
-﻿using Jorg.Api.Models.Enums;
-using Jorg.Api.Models;
+﻿using Jorg.Web.Models.Enums;
+using Jorg.Web.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace Jorg.Api.Data
+namespace Jorg.Web.Data
 {
 	public class ApplicationDbContext(DbContextOptions options) : DbContext(options)
 	{

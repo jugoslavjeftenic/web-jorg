@@ -1,7 +1,7 @@
-﻿using Jorg.Api.Models;
-using Jorg.Api.Models.Enums;
+﻿using Jorg.Web.Models;
+using Jorg.Web.Models.Enums;
 
-namespace Jorg.Api.Data
+namespace Jorg.Web.Data
 {
 	public static class DBInitializer
 	{

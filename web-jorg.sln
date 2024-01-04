@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jorg.Api", "Jorg.Api\Jorg.Api.csproj", "{504CC498-4AF3-4C6A-901D-FD22EB4DF3CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jorg.Api", "Jorg.Api\Jorg.Api.csproj", "{504CC498-4AF3-4C6A-901D-FD22EB4DF3CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jorg.Web", "Jorg.Web\Jorg.Web.csproj", "{D2993D25-0067-4D31-8F2F-70EC63A98684}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{504CC498-4AF3-4C6A-901D-FD22EB4DF3CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{504CC498-4AF3-4C6A-901D-FD22EB4DF3CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{504CC498-4AF3-4C6A-901D-FD22EB4DF3CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2993D25-0067-4D31-8F2F-70EC63A98684}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2993D25-0067-4D31-8F2F-70EC63A98684}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2993D25-0067-4D31-8F2F-70EC63A98684}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2993D25-0067-4D31-8F2F-70EC63A98684}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

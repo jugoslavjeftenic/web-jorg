@@ -1,11 +1,11 @@
-﻿using Jorg.Api.Data;
-using Jorg.Api.Filters.ActionFilters;
-using Jorg.Api.Filters.ExceptionFilters;
-using Jorg.Api.Filters.ResourceFilters;
-using Jorg.Api.Models;
+﻿using Jorg.Web.Data;
+using Jorg.Web.Filters.ActionFilters;
+using Jorg.Web.Filters.ExceptionFilters;
+using Jorg.Web.Filters.ResourceFilters;
+using Jorg.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Jorg.Api.Controllers
+namespace Jorg.Web.Controllers
 {
 	[ApiController]
 	[Route("api/v1/[controller]")]

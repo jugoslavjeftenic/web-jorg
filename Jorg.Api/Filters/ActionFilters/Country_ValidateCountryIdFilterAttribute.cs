@@ -1,8 +1,8 @@
-﻿using Jorg.Api.Data;
+﻿using Jorg.Web.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace Jorg.Api.Filters.ActionFilters
+namespace Jorg.Web.Filters.ActionFilters
 {
 	public class Country_ValidateCountryIdFilterAttribute(JorgDbContext db) : ActionFilterAttribute
 	{

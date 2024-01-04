@@ -1,0 +1,23 @@
+﻿@model List<CountryModel>
+
+<h3>Countries</h3>
+<br />
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<td>ALFA</td>
+			<td>Država</td>
+			<td>Kontinent</td>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var country in Model)
+		{
+			<tr>
+				<td>@country.Alpha</td>
+				<td>@country.Country</td>
+				<td>@country.Continent</td>
+			</tr>
+		}
+	</tbody>
+</table>

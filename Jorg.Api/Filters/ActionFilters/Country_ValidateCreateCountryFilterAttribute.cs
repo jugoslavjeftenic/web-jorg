@@ -1,9 +1,9 @@
-﻿using Jorg.Api.Data;
-using Jorg.Api.Models;
+﻿using Jorg.Web.Data;
+using Jorg.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace Jorg.Api.Filters.ActionFilters
+namespace Jorg.Web.Filters.ActionFilters
 {
 	public class Country_ValidateCreateCountryFilterAttribute(JorgDbContext db) : ActionFilterAttribute
 	{
