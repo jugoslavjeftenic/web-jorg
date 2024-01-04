@@ -1,6 +1,5 @@
 ﻿using Jorg.Web.Data;
 using Jorg.Web.Models;
-using Jorg.Web.Models.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Jorg.Web.Controllers
