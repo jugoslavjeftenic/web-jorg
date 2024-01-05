@@ -12,5 +12,16 @@ namespace Jorg.Web.Controllers
 		{
 			return View(await _webApiExecutor.InvokeGet<List<CountryModel>>("countries"));
 		}
+
+		public IActionResult CreateCountry()
+		{
+			return View();
+		}
+
+		[HttpPost]
+		public async Task<IActionResult> CreateCountry(CountryModel countryModel)
+		{
+			return View(countryModel);
+		}
 	}
 }

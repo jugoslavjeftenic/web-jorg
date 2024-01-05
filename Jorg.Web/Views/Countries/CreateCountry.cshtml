@@ -1,0 +1,46 @@
+﻿@model CountryModel
+
+<h3>Država</h3>
+<br />
+<form method="post" asp-action="CreateCountry">
+	<div class="text-danger" asp-validation-summary="ModelOnly"></div>
+	<div class="mb-3 row">
+		<div class="col-2">
+			<label class="col-form-label" asp-for="Alpha"></label>
+		</div>
+		<div class="col-6">
+			<input class="form-control" asp-for="Alpha" type="text" />
+		</div>
+		<div class="col">
+			<span class="text-danger" asp-validation-for="Alpha"></span>
+		</div>
+	</div>
+	<div class="mb-3 row">
+		<div class="col-2">
+			<label class="col-form-label" asp-for="Country"></label>
+		</div>
+		<div class="col-6">
+			<input class="form-control" asp-for="Country" type="text" />
+		</div>
+		<div class="col">
+			<span class="text-danger" asp-validation-for="Country"></span>
+		</div>
+	</div>
+	<div class="mb-3 row">
+		<div class="col-2">
+			<label class="col-form-label" asp-for="Continent"></label>
+		</div>
+		<div class="col-6">
+			<input class="form-control" asp-for="Continent" type="number" min="0" max="6" />
+		</div>
+		<div class="col">
+			<span class="text-danger" asp-validation-for="Continent"></span>
+		</div>
+	</div>
+	<div class="mb-3 row">
+		<div class="col-2">
+			<input class="btn btn-primary" type="submit" value="Upiši" />
+		</div>
+		<div class="col-6"></div>
+	</div>
+</form>
