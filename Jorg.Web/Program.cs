@@ -6,6 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddHttpClient("JorgApi", client =>
 {
 	client.BaseAddress = new Uri("https://app-jorg-api-westeu-dev-001.azurewebsites.net/api/v1/");
+	//client.BaseAddress = new Uri("https://localhost:7040/api/v1/");
 	client.DefaultRequestHeaders.Add("Accept", "application/json");
 });
 builder.Services.AddControllersWithViews();

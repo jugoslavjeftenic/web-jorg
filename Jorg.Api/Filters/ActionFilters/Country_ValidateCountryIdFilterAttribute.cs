@@ -4,9 +4,11 @@ using Microsoft.AspNetCore.Mvc.Filters;
 
 namespace Jorg.Web.Filters.ActionFilters
 {
-	public class Country_ValidateCountryIdFilterAttribute(JorgDbContext db) : ActionFilterAttribute
+	public class Country_ValidateCountryIdFilterAttribute(ApplicationDbContext db) : ActionFilterAttribute
+	//public class Country_ValidateCountryIdFilterAttribute(JorgDbContext db) : ActionFilterAttribute
 	{
-		private readonly JorgDbContext _db = db;
+		private readonly ApplicationDbContext _db = db;
+		//private readonly JorgDbContext _db = db;
 
 		public override void OnActionExecuting(ActionExecutingContext context)
 		{

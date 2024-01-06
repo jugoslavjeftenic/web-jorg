@@ -21,6 +21,15 @@ namespace Jorg.Web.Controllers
 		[HttpPost]
 		public async Task<IActionResult> CreateCountry(CountryModel countryModel)
 		{
+			if (ModelState.IsValid)
+			{
+				var response = await _webApiExecutor.InvokePost("countries", countryModel);
+				if (response != null)
+				{
+					return RedirectToAction(nameof(Index));
+				}
+			}
+
 			return View(countryModel);
 		}
 	}

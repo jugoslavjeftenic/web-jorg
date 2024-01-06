@@ -9,9 +9,11 @@ namespace Jorg.Web.Controllers
 {
 	[ApiController]
 	[Route("api/v1/[controller]")]
-	public class CountriesController(JorgDbContext db) : ControllerBase
+	public class CountriesController(ApplicationDbContext db) : ControllerBase
+	//public class CountriesController(JorgDbContext db) : ControllerBase
 	{
-		private readonly JorgDbContext _db = db;
+		private readonly ApplicationDbContext _db = db;
+		//private readonly JorgDbContext _db = db;
 
 		// Create
 		[HttpPost]

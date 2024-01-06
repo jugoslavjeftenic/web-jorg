@@ -1,6 +1,7 @@
 ﻿using Jorg.Web.Models.Enums;
 using Jorg.Web.Models.Validations;
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace Jorg.Web.Models
 {
